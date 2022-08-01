@@ -1,4 +1,3 @@
-import react from 'react';
 import style from './Button.module.scss';
 
 type Props = {

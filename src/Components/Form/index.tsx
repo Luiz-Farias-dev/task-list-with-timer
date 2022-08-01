@@ -12,8 +12,6 @@ const Form = (props : Props) => {
   const {setTarefas} = props
   const [time, setTime] = useState<string>("00:00:00")
   const [task, setTask] = useState<string>("")
-  const [selecionado, setSelecionado] = useState<boolean>(false)
-  const [completado, setCompleado] = useState<boolean>(false)
   function addTask(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
     setTarefas((tarefasAntigas: Itarefa[]) => [
